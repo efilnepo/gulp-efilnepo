@@ -1,6 +1,6 @@
 {
   "name": "gulp-efilnepo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "bootstrap project with less coffee jade and livereload",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,23 @@
     "gulp-jade": "^0.4.2",
     "gulp-less": "^1.2.3",
     "gulp": "^3.6.0"
-  }
+  },
+  "dependencies": {
+    "gulp": "~3.6.0",
+    "gulp-coffee": "~1.4.1",
+    "gulp-less": "~1.2.3",
+    "gulp-connect": "~1.1.0",
+    "gulp-jade": "~0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/efilnepo/gulp-efilnepo.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "bugs": {
+    "url": "https://github.com/efilnepo/gulp-efilnepo/issues"
+  },
+  "homepage": "https://github.com/efilnepo/gulp-efilnepo"
 }
