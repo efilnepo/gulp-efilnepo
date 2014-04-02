@@ -23,5 +23,7 @@ gulp
 
 requires livereload plugin fot Chrome. After it is started it will open index.html and will watch for app changes
 
+## Additional bower components
 
+twitter bootsrap + jquery
  
