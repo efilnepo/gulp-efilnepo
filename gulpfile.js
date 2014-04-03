@@ -3,6 +3,7 @@ var less = require('gulp-less');
 var coffee = require('gulp-coffee');
 var jade = require('gulp-jade');
 var connect = require('gulp-connect');
+var clean = require('gulp-clean');
 
 var paths = {
   scripts: ['app/coffee/*.coffee'],
@@ -17,9 +18,16 @@ gulp.task('less', function() {
       .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('clean', function() {
+    gulp.src('dist', {read: false})
+        .pipe(clean());
+});
+
 gulp.task('copy', function() {
   gulp.src(paths.images)
       .pipe(gulp.dest('dist/img'));
+  gulp.src('app/bower_components/**')
+      .pipe(gulp.dest('dist/bower_components'));
 });
 
 gulp.task('coffee', function() {
@@ -54,4 +62,4 @@ gulp.task('watch', function() {
     gulp.watch('app/jade/*.jade',['jade','html-reload']);
 });
 
-gulp.task('default', ['less','copy','coffee','jade','connect','watch']);
+gulp.task('default', ['clean','less','copy','coffee','jade','connect','watch']);
