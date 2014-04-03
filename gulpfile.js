@@ -19,15 +19,19 @@ gulp.task('less', function() {
 });
 
 gulp.task('clean', function() {
-    gulp.src('dist', {read: false})
+    gulp.src('dist/**', {read: false})
         .pipe(clean());
 });
 
 gulp.task('copy', function() {
   gulp.src(paths.images)
       .pipe(gulp.dest('dist/img'));
-  gulp.src('app/bower_components/**')
-      .pipe(gulp.dest('dist/bower_components'));
+  gulp.src('app/bower_components/jquery/dist/**')
+      .pipe(gulp.dest('dist/bower_components/jquery/dist/'));
+  gulp.src('app/bower_components/bootstrap/js/**')
+      .pipe(gulp.dest('dist/bower_components/bootstrap/js/'));
+  gulp.src('app/bower_components/bootstrap/dist/fonts/**')
+      .pipe(gulp.dest('dist/fonts/'));
 });
 
 gulp.task('coffee', function() {
@@ -63,3 +67,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['clean','less','copy','coffee','jade','connect','watch']);
+
+gulp.task('build',['clean','less','copy','coffee','jade']);

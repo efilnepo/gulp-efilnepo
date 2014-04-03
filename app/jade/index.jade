@@ -14,11 +14,31 @@ html
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
       
-      a.btn.btn-primary Push11weeee
-      #hello hello1
-      #hello1 hello
-      #hello2 hello2121er21e1e12e12e21e12d10000-999999
-      #hello3 hello2121er21e1e12e12e21e12d10000-999999
+      .navbar.navbar-inverse.navbar-fixed-static(role="navigation")
+        .container
+          .navbar-header
+            button.navbar-toggle(type="button",data-toggle="collapse",data-target=".navbar-collapse")
+              span.sr-only Toogle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href="#") Project name
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href="#") Home
+              li
+                a(href="#") About
+              li
+                a(href="#") Contact
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            h1 Bootstrap starter template
+            p.lead
+              |Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            span.glyphicon.glyphicon-tower
+
       
       <!-- build:js scripts/vendor.js -->
       <!-- bower:js -->
