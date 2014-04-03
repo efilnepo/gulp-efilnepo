@@ -21,7 +21,12 @@ dist - compiled area, will contain ``index.html css/style.css js/script.js``
 
 ```
 gulp
+
+gulp build
+
+gulp clean
 ```
+Sometimes clean does not work, in this case I run it twice and after second time it is fine.
 
 requires livereload plugin fot Chrome. After it is started it will open index.html and will watch for app changes
 
