@@ -19,7 +19,9 @@ dist - compiled area, will contain ``index.html css/style.css js/script.js``
 
 ## Running
 
+```
 gulp
+```
 
 requires livereload plugin fot Chrome. After it is started it will open index.html and will watch for app changes
 
