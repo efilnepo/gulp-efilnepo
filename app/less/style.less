@@ -1,8 +1,92 @@
+// Main LESS/CSS file
+// import bootstrap
+@import "../bower_components/bootstrap/less/bootstrap.less";
+// import fontawesome
+@import "../bower_components/fontawesome/less/font-awesome.less";
+// import efilnepo
+@import "../bower_components/efilnepo-less/less/efilnepo.less";
+
+// Helpful elements ...
+.f1 {
+    font-family: "open_sans", Helvetica, Arial, sans-serif;
+}
+.f2 {
+    font-family: "pt_serif", Georgia, "Times New Roman", Times, serif;
+}
+.c1 {
+	color: @white;
+}
+.c2 {
+	color: @gray;
+}
+.background-blue-canvas {
+	background: url('../img/canvas-blue.png') repeat;
+}
+.mt-72 {
+	margin-top: -72px;
+}
+.s20 {
+	font-size: 20px;
+}
+.e-circle {
+	.e-circle(150px);
+	.text-center();
+}
+.e-caps {
+	.e-caps();
+}
+.text-shadow {
+	.text-shadow();
+}
+
+// Sections
+#header {
+	.size(100%,300px);
+	border-bottom: 2px solid #3d638a;
+
+}
+#header  li > a {
+	letter-spacing: 3px;
+	font-weight: 700;
+}
+#section2 {
+	background: url('../img/local-background.jpg') no-repeat;
+	background-position: bottom center;
+	height: 678px;
+}
+#footer {
+	height: 168px;
+}
+
+//Components
+.moto {
+	//font-family: 'Museo';
+	.f2;
+	letter-spacing: 0px;
+	line-height: 1;
+	font-weight: 400;
+}
+.e-btn-pink {
+	.button-variant(#880d0d; #f38282; #cc1414);
+	.button-size(20px; 40px; 22px; @line-height-large; @border-radius-large);
+}
+
+.e-btn-dark {
+	.button-variant(#ffffff; #2c5b63; #1a373b);
+	.button-size(20px; 40px; 22px; @line-height-large; @border-radius-large);
+}
+
+//Rest
+li.item {
+	border-right: 1px solid #555555;
+	&:last-child {
+		border: none;
+	}
+}
+
 #content {
 	color: #000000;
 }
 #hello {
 	color: #FF0000;
 }
-// import bootstrap
-@import "../bower_components/bootstrap/less/bootstrap.less";

@@ -1,6 +1,6 @@
 {
   "name": "gulp-efilnepo",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "bootstrap project with less coffee jade and livereload",
   "main": "index.js",
   "scripts": {
