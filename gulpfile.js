@@ -11,7 +11,7 @@ var paths = {
   fonts: ['app/bower_components/bootstrap/dist/fonts/**',
           'app/bower_components/fontawesome/fonts/**',
           'app/bower_components/efilnepo-less/fonts/**'],
-  jade: 'app/jade/index.jade',
+  jade: 'app/jade/*.jade',
   less: 'app/less/style.less'
 };
 
