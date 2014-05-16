@@ -8,7 +8,9 @@ var clean = require('gulp-clean');
 var paths = {
   scripts: ['app/coffee/*.coffee'],
   images: 'app/img/**',
-  fonts: 'app/fonts/**',
+  fonts: ['app/bower_components/bootstrap/dist/fonts/**',
+          'app/bower_components/fontawesome/fonts/**',
+          'app/bower_components/efilnepo-less/fonts/**'],
   jade: 'app/jade/index.jade',
   less: 'app/less/style.less'
 };
@@ -33,10 +35,6 @@ gulp.task('copy', function() {
       .pipe(gulp.dest('dist/bower_components/jquery/dist/'));
   gulp.src('app/bower_components/bootstrap/js/**')
       .pipe(gulp.dest('dist/bower_components/bootstrap/js/'));
-  gulp.src('app/bower_components/bootstrap/dist/fonts/**')
-      .pipe(gulp.dest('dist/fonts/'));
-  gulp.src('app/bower_components/fontawesome/fonts/**')
-      .pipe(gulp.dest('dist/fonts/'));
 });
 
 gulp.task('coffee', function() {
